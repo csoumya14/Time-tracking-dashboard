@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ImageHeadingDiv = styled.div`
+export const ImageHeadingHeader = styled.header`
 display:flex;
 background:${props => props.theme.palette.primary.blue};
 justify-content:space-around;

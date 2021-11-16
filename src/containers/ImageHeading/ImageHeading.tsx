@@ -1,13 +1,13 @@
 import React from 'react'
-import { ImageHeadingDiv } from './ImageHeading.css'
+import { ImageHeadingHeader } from './ImageHeading.css'
 import { ImageElement } from '../../components/ImageElement/ImageElement'
 import {HeadingElement} from '../../components/HeadingElement/HeadingElement'
 
 export const ImageHeading = () => {
   return(
-    <ImageHeadingDiv>
+    <ImageHeadingHeader>
         <ImageElement/>
         <HeadingElement/>
-      </ImageHeadingDiv>
+      </ImageHeadingHeader>
   )
 }
