@@ -1,4 +1,5 @@
 import 'styled-components';
+import { Url } from 'url';
 
 // and extend them!
 declare module 'styled-components' {
@@ -19,6 +20,14 @@ declare module 'styled-components' {
         desaturatedBlue: string;
         paleBlue: string;    
       };
+    };
+    backgroundImages:{
+        work:string;
+        play:string;
+        study:string;
+        exercise:string;
+        social:string;
+        selfCare:string;
     };
     mediaSize: {
       mobileSmall: string;
