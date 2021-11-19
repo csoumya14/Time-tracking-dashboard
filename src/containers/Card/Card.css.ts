@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import {CardUpper,CardWrapper} from '../CardContents/CardContents.css'
-import {CardLower} from '../CardLowerContents/CardLowerContents.css'
 
 export const CardContainer = styled.main`
 & ${CardWrapper}:nth-child(1){
@@ -55,7 +54,6 @@ export const CardContainer = styled.main`
     background-repeat: no-repeat;
     background-position: 90% -5%;
   }
-  
 }
 `
 

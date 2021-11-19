@@ -1,5 +1,7 @@
 import React from 'react'
-import {CardTimeWrapper,CurrentP,PreviousP} from './CardTimeDetails.css'
+import {CardTimeWrapper} from './CardTimeDetails.css'
+import {CurrentValueTime} from '../../components/CurrentValueTime/CurrentValueTime'
+import {PreviousValueTime} from '../../components/PreviousValueTime/PreviousValueTime'
 
 interface DataValueProps{
   current: number;
@@ -9,8 +11,8 @@ interface DataValueProps{
 export const CardTimeDetails = ({dataValue,timeFrame}:{dataValue:DataValueProps,timeFrame:string}) => {
   return(
     <CardTimeWrapper>
-         <CurrentP>{dataValue.current} hrs</CurrentP>
-         <PreviousP>Last <span>{timeFrame}</span> - {dataValue.previous}hrs</PreviousP>
+         <CurrentValueTime currentTimeValue = {dataValue.current} />
+         <PreviousValueTime previousTimeValue={dataValue.previous} timeFrame={timeFrame}/>
     </CardTimeWrapper>
   )
 }

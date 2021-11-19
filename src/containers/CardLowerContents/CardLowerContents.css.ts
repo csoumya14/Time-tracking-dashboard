@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import {CardUpper} from '../CardContents/CardContents.css'
 
 export const CardLower = styled.div`
 width:90%;
